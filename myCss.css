@@ -1,0 +1,9 @@
+img{
+    margin:auto;
+    width:150px;
+}
+.panel-body {
+            min-height: 180px;
+/*            max-height: 200px;*/
+            
+        }

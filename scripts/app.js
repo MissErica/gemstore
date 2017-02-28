@@ -1,4 +1,9 @@
-var myApp = angular.module('myApp', []);
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+var myApp = angular.module('myApp', ['ui.bootstrap']);
 
 
 var gems = [{
@@ -50,7 +55,7 @@ var gems = [{
              name: 'Azurite',
             price: 7.95,
             description: 'Best seller!',
-            canPurchase: false,
+            canPurchase: true,
                 images:[
         {
             fullSize: '/images/gem-07.gif'
@@ -65,7 +70,7 @@ var gems = [{
              name: 'Feldspar',
             price: 2.95,
             description: 'Best seller!',
-            canPurchase: false, 
+            canPurchase: true, 
                 images:[
         {
             fullSize: '/images/gem-09.gif'
@@ -97,12 +102,30 @@ var gems = [{
 
 
 myApp.controller('myController', function($scope) {
-    
+    $scope.cart=[];
     $scope.model = gems;
     
     $scope.initialize = function() {
         console.log("Initilized");
     }
     
+    $scope.addProduct = function(product){
+        $scope.cart.push(product);
+        console.log("product added")
+    }
 
+});
+
+
+
+myApp.controller('panelController', function($scope){
+    $scope.tab = 1;
+    $scope.selectTab = function(tab){
+        $scope.tab = tab;
+        console.log("tab changed to "+ tab)
+    };
+    
+    $scope.isSelected = function(tab){
+        return $scope.tab === tab;
+    };
 });
