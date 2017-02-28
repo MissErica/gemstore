@@ -1,0 +1,70 @@
+img{
+    margin:auto;
+    width:150px;
+}
+.panel {
+         max-height: 500px;   
+/*            max-height: 200px;*/
+            
+        }
+
+.reviewScroll{
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.descriptionscroll{
+    max-height: 70px;
+    overflow-y: scroll;
+    
+}
+
+.navstyle{
+    
+    
+    background-color:#E1FAFC;
+    
+}
+body{
+    background-color:#002B3B;
+    font-family: 'Maitree', serif;
+    
+}
+
+.btncart{
+   background-color:#FF2D54;
+}
+
+
+.titlestyle{
+    color:black;
+    font-weight:500;
+    font-size:40px;
+    letter-spacing: 1px;
+    
+    font-family: 'Grand Hotel', cursive;
+    
+}
+
+.btnblue{
+    background-color:#057D9F;
+}
+.panel-heading{
+    background-color: #057D9F;
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btnlightblue{
+    background-color:#E1FAFC;
+}
+
+
+
+
+
+
+
+
+

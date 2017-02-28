@@ -1,14 +1,57 @@
-img{
-    margin:auto;
-    width:150px;
-}
-.panel-body {
-            min-height: 180px;
-/*            max-height: 200px;*/
-            
-        }
+/* line 1, /Users/Erica/Desktop/gemstore/gemstore/myCss.scss */
+img {
+  margin: auto;
+  width: 150px; }
 
-.reviewScroll{
-    max-height: 200px;
-    overflow-y: scroll;
-}
+/* line 5, /Users/Erica/Desktop/gemstore/gemstore/myCss.scss */
+.panel {
+  max-height: 500px;
+  /*            max-height: 200px;*/ }
+
+/* line 11, /Users/Erica/Desktop/gemstore/gemstore/myCss.scss */
+.reviewScroll {
+  max-height: 150px;
+  overflow-y: scroll; }
+
+/* line 16, /Users/Erica/Desktop/gemstore/gemstore/myCss.scss */
+.descriptionscroll {
+  max-height: 70px;
+  overflow-y: scroll; }
+
+/* line 22, /Users/Erica/Desktop/gemstore/gemstore/myCss.scss */
+.navstyle {
+  background-color: #E1FAFC; }
+
+/* line 28, /Users/Erica/Desktop/gemstore/gemstore/myCss.scss */
+body {
+  background-color: #002B3B;
+  font-family: 'Maitree', serif; }
+
+/* line 34, /Users/Erica/Desktop/gemstore/gemstore/myCss.scss */
+.btncart {
+  background-color: #FF2D54; }
+
+/* line 39, /Users/Erica/Desktop/gemstore/gemstore/myCss.scss */
+.titlestyle {
+  color: black;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-family: 'Grand Hotel', cursive; }
+
+/* line 49, /Users/Erica/Desktop/gemstore/gemstore/myCss.scss */
+.btnblue {
+  background-color: #057D9F; }
+
+/* line 52, /Users/Erica/Desktop/gemstore/gemstore/myCss.scss */
+.panel-heading {
+  background-color: #057D9F;
+  color: black;
+  font-size: 20px;
+  font-weight: 500; }
+
+/* line 59, /Users/Erica/Desktop/gemstore/gemstore/myCss.scss */
+.btnlightblue {
+  background-color: #E1FAFC; }
+
+/*# sourceMappingURL=myCss.css.map */
