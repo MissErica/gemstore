@@ -1,1 +1,114 @@
-<doctype>
+<!doctype html>
+
+<html ng-app="myApp">
+<head>
+    <title> Dodecahedron Gem Store</title>
+    <meta charset = "utf-8">
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <style>
+        .panel-body {
+            min-height: 160px;
+            
+        }
+    </style>
+    </head>
+    
+    
+    
+    
+    
+<body ng-controller="myController">
+    
+    
+
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+      <h1>Dodecahedron Store</h1>
+  </div>
+</nav>
+    <main class = "container">
+        <div class = "row" >
+            <div class = "col-xs-12 col-sm-4" ng-repeat="product in model">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        {{product.name}}
+                    </div>
+                    <div class="panel-body">
+                        <span>
+                            {{product.price|currency}}
+                        </span>
+                        
+                        
+                        
+<!--
+                        
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="{{$index}}" ng-class="{active:!$index}" ng-repeat="image in product.images"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active" ng-repeat="image in product.images" ng-class="{active:!$index}">
+      <img ng-src="{{image.Fullsize}}">
+    </div>
+    <div class="carousel-item">
+      
+    </div>
+   
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                        
+-->
+                        
+                        
+                        <div ng-repeat="image in product.images"> 
+                        <img ng-src="{{image.fullSize}}" />
+                            </div>
+                        <p>{{product.description}}</p>
+                        <button class="btn btn-primary" ng-show="product.canPurchase"> Add to cart </button>
+<!--                        <button ng-click="hide()"> Hide me!</button>-->
+                    </div>
+                
+                
+                </div>
+            
+            
+            </div>
+        
+        
+        
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    </main>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"> </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src = "scripts/app.js"></script>
+    
+    </body>
+
+</html>
