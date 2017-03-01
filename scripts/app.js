@@ -161,6 +161,18 @@ myApp.controller("reviewController",function($scope){
         product.reviews.push($scope.review);
         //TODO: send this review to our API so it can be saved server-side
         $scope.review = {};
-    };
+        //This resets the form after submission so it doesn't show error 
+        $scope.reviewForm.body.$setPristine();
+        $scope.reviewForm.author.$setPrisitne();
+        $scope.reviewForm.stars.$setPristine();
+    }
+    $scope.validate = function(){
+        //Touching each of the inputs in the current form to set them to dirty
+        //If they've been left blank, this will cause the has-error class to be applied
+        $scope.reviewForm.body.$setDirty();
+        $scope.reviewForm.author.$setDirty();
+        $scope.reviewForm.stars.$setDirty();
+        return $scope.reviewForm.$valid;
+    }
 });
 
