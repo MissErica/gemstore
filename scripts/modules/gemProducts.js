@@ -58,3 +58,5 @@ angular.module("gemProducts").directive("gemWriteReview", function () {
                         }
                     }
                 }
+ })
+                
